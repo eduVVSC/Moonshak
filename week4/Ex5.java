@@ -2,18 +2,17 @@ import java.util.Scanner;
 
 public class Ex5 {
 	public static void main(String[] args){
+		Scanner	myObj = new Scanner(System.in);
+		int		decimal;
 		int		digit;
 		int		octal;
-		double	i = 0;
-		int	decimal;
-		Scanner	myObj = new Scanner(System.in);
+		double	i;
 
-		decimal = 0;
 		octal = myObj.nextInt();
-		if (octal < 0)
-			return ;
-		else
+		while (octal >= 0)
 		{
+			decimal = 0;
+			i = 0;
 			while (octal > 0)
 			{
 				digit = octal % 10;
@@ -22,6 +21,7 @@ public class Ex5 {
 				i++;
 			}
 			System.out.println(decimal);
+			octal = myObj.nextInt();
 		}
 	}
 }

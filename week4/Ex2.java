@@ -6,12 +6,12 @@ public class Ex2 {
 		int	sum;
 		int	num;
 		int	digit;
-		Scanner myObj = new Scanner(System.in);
+		Scanner input = new Scanner(System.in);
 
-		sum = 0;
-		num = myObj.nextInt();
-		if(num >= 0)
+		num = input.nextInt();
+		while (num >= 0)
 		{
+			sum = 0;
 			while(num > 0)
 			{
 				digit = num % 10;
@@ -20,6 +20,7 @@ public class Ex2 {
 					sum += digit;
 			}
 			System.out.println(sum);
+			num = input.nextInt();
 		}
 	}
 }
