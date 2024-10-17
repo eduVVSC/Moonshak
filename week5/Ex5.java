@@ -25,7 +25,7 @@ public class Ex5 {
 			i++;;
 		}
 		if (flag == 0)
-			System.out.printf("Suggestion #<%d>:<%s>\n", index, pizza_flavour);
+			System.out.printf("Suggestion #%d:%s\n", index, pizza_flavour);
 		return flag;
 	}
 
@@ -34,7 +34,7 @@ public class Ex5 {
 		Scanner	input = new Scanner(System.in);
 		String	dont_ingredients;
 		String	pizza_flavour;
-		int		print_index = 0;
+		int		print_index = 1;
 		int		many_pizzas;
 		int		i = 0;
 
