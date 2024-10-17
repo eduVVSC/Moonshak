@@ -1,6 +1,6 @@
 import java.util.Scanner;
 
-// need to fix there is somthing wrong with the counter;
+// need to fix there is somthing wrong with the counter pos1;
 public class Ex6 {
 	public static void main(String[] args)
 	{
@@ -14,6 +14,7 @@ public class Ex6 {
 		String	num;
 
 		num = input.nextLine();
+		digit = 'a';
 		while (Integer.parseInt(num) > 0)
 		{
 			len = num.length() - 1;
@@ -21,7 +22,7 @@ public class Ex6 {
 			while (len >= 0 && flag == NOT_FOUND)
 			{
 				digit = num.charAt(len);
-				pos_1 =  len - num.length() + 2;
+				pos_1 =  (len -  num.length()) * (-1);
 				i = len - 1;
 				//System.out.printf("%d - %d\n", i , len);
 				while (i >= 0 && flag == NOT_FOUND)
@@ -37,7 +38,7 @@ public class Ex6 {
 				len--;
 			}
 			if (flag == FOUND)
-				System.out.printf("%s : digit (%c) repeated in positions (%d) and (%d)\n", num, num.charAt(1), pos_1, pos_2);
+				System.out.printf("%s : digit (%c) repeated in positions (%d) and (%d)\n", num, digit, pos_1, pos_2);
 			num = input.next();
 		}
 	}

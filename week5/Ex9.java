@@ -25,10 +25,10 @@ public class Ex9 {
 			else
 				many_even++;
 			many_num++;
-			num = num % 10;
+			num = num / 10;
 		}
 		if (many_even > 0)
-			System.out.println((many_even / many_num) * 100);
+			System.out.printf("%.2f%%\n", (many_even / many_num) * 100);
 		else
 			System.out.println("0.00%");
 		if (greater_odd != 0)

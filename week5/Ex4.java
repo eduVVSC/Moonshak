@@ -15,7 +15,7 @@ public class Ex4 {
 			while (num_img > 0 && flag == 0)
 			{
 				digit_now = num_img % 10;
-				if (digit < digit_now)
+				if (digit <= digit_now)
 					flag = 1;
 				num_img = num_img / 10;
 			}

@@ -11,6 +11,8 @@ public class Ex2 {
 		int		sum = 0;
 
 		many_perfect_nums = input.nextInt();
+		if (many_perfect_nums <= 0)
+			return ;
 		System.out.println("6");
 		while (printed < many_perfect_nums)
 		{
