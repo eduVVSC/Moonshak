@@ -2,7 +2,7 @@ import java.util.Scanner;
 
 public class Ex6
 {
-	public static final double PI = 3.14;
+	public static final double PI = 3.14159265369;
 
 	public static double cone_volume(Scanner input)
 	{

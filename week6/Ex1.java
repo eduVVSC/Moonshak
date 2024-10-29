@@ -23,12 +23,15 @@ public class Ex1 {
 		while (many_digits(num) < max_digits && i <= MAX)
 		{
 			total = total + num;
-			System.out.printf("total -> %d\n", total);
+			//System.out.printf("total -> %d\n", total);
 			if (i < MAX)
 				num = input.nextInt();
 			i++;
 		}
 		average = (double)total / (i - 1);
-		System.out.printf("%.2f\n", average);
+		if ((int)average == 0)
+			System.out.println("0.00");
+		else
+			System.out.printf("%.2f\n", average);
 	}
 }
