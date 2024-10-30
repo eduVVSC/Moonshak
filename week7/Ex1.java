@@ -29,7 +29,6 @@ public class Ex1
 				}
 				n2--;
 			}
-			n2 = 1;
 			n1--;
 		}
 		System.out.printf("triples=%d\n", many_trip);
