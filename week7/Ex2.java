@@ -10,7 +10,6 @@ public class Ex2 {
 
 		sum = (int)num.charAt(0) - '0';
 		strlen = num.length();
-		System.out.println("num " + ((int)num.charAt(0) - '0') + "sum " + sum);
 		for (int i = 1; i < strlen; i++)
 		{
 			if (num.charAt(i) == num.charAt(i - 1))
@@ -24,10 +23,6 @@ public class Ex2 {
 			}
 			else
 				sum += (int)num.charAt(i) - '0';
-			System.out.println("num " + ((int)num.charAt(i) - '0') + "sum " + sum);
-			//if (side == 2)
-			//	side = 0;
-			//side++;
 		}
 		return (sum);
 	}
@@ -39,6 +34,6 @@ public class Ex2 {
 
 
 		num = input.next();
-		System.out.println(calculate_num(num));
+		System.out.println("points=" + calculate_num(num));
 	}
 }

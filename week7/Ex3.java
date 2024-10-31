@@ -1,5 +1,6 @@
 import	java.util.Scanner;
 
+// concertar depois
 public abstract class Ex3
 {
 	public static int	count_words(String str)
@@ -25,7 +26,9 @@ public abstract class Ex3
 		String	str;
 
 		str = input.nextLine();
-		if (str != "")
+		if (str.isEmpty())
+			System.out.println(0);
+		else
 			System.out.println(count_words(str));
 	}
 }

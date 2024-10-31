@@ -39,6 +39,8 @@ public class Ex4
 		many_positive = 0;
 		many_negative = 0;
 		num = input.nextInt();
+		if (num == 0)
+			return ;
 		while (num != 0)
 		{
 			numString = Integer.toString(num);
