@@ -1,5 +1,18 @@
 import java.util.Scanner;
 
+/*
+a) Implement a module that receives two positive integers and returns the number of common digits in the same positions.
+
+b) Write a program to read N pairs of positive integers. The value of N is entered by the user.
+After reading the N value pairs, the program must display the pair that has the most common digits at the same positions. If there is more than one pair with the same number of digits in common, the last pair found must be displayed.
+
+
+The result should contain only the pair in question in the following format:
+"number1/number2".
+
+If there are no pair of numbers that have digits in common, the message "no results" should be displayed.
+*/
+
 public class Ex5
 {
 	public static int	many_common(String	num1, String num2)

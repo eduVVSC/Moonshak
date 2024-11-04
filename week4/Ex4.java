@@ -1,5 +1,17 @@
 import java.util.Scanner;
 
+/*
+Build a program that calculates the product of odd digits
+of a positive integer entered by the user.For example,
+if the input is number 56983 the output will be
+ 135 (3 * 9 * 5).
+
+If there are no odd digits, it should be displayed
+ the message "no odd digits".
+
+The algorithm must be applied to a sequence
+of integers ending with a non-positive number.
+*/
 public class Ex4 {
 	public static void main(String[] args)
 	{

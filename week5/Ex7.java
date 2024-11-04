@@ -1,5 +1,11 @@
 import java.util.Scanner;
 
+/*
+Build a program that based on an integer value, representative of a clock Code, indicates the clock Brand.
+
+The following table indicates the correspondence between the clock Code and the clock Brand.
+*/
+
 public class Ex7 {
 	public static void main(String[] args)
 	{

@@ -1,5 +1,16 @@
 import java.util.Scanner;
 
+/*
+Write a program to determine volumes of revolution solids. Consider only these types of solids: cylinder, cone and sphere.
+For each solid, the type of solid and its dimensions (radius and height if required) will be entered.
+
+The program must be able to function repeatedly until the word "end" is entered as a solid type.
+
+Each result should be presented on separate lines and with two decimal places.
+
+Implement a separate method to calculate the volume of each solid.
+*/
+
 public class Ex6
 {
 	public static final double PI = 3.14159265369;

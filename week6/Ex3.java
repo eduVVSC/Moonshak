@@ -1,5 +1,21 @@
 import	java.util.Scanner;
 
+/*
+a) Implement a method that calculates an inner angle of a triangle. The method must take as parameter the measurements on the three sides of the triangle and returns the calculated angle in degrees.
+
+b) Write a program that asks for the three-sided measurements of a triangle, check if they are valid and if it is possible to form a triangle. If so, calculate all 3 internal angles of this triangle. To do this, invoke the method developed in the previous paragraph three times.
+
+Results should be displayed in separate lines and angle values ​​in degrees with two decimal places.
+If it is not possible to form a triangle, the message "impossible" should be displayed.
+
+a=2.00
+b=3.00
+c=4.00
+ang (a,b)=104.48
+ang (a,c)=46.57
+ang (b,c)=28.96
+*/
+
 public class Ex3
 {
 	public static int		possible(double side1, double side2, double side3)

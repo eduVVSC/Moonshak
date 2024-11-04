@@ -1,5 +1,10 @@
 import java.util.Scanner;
 
+/*
+Build a program that calculates the sum of the
+even digits of a positive integer entered by the user.
+*/
+
 public class Ex2 {
 	public static void main(String[] args)
 	{

@@ -1,5 +1,12 @@
 import java.util.Scanner;
 
+/*
+A palindrome is a sequence that reads the same backward as forward.
+a) Implement a method that checks whether or not an integer is a palindrome.
+
+b) Write a program to find a palindrome in a sequence of user-entered integers. The program should read a number, verify if it is a palindrome and, if so, the message "palindrome" should be displayed, otherwise another number should be read. The program ends when it finds a palindrome or the size of the sequence exceeds a threshold value (5). The threshold value is the maximum number of attempts (5) without finding a palindrome. The message "attempts exceeded" should be displayed if the threshold value is exceeded.
+*/
+
 public class Ex8
 {
 	public static final int MAX = 5;

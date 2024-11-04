@@ -1,10 +1,22 @@
 import java.util.Scanner;
 
+/*
+A Pizza restaurant has a variety of Pizzas on its menu. The variety of Pizzas results from the different use of 10 possible ingredients. Each ingredient is identified by a number from 0 to 9.
+In this way, each Pizza is identified by an integer whose digits correspond to the ingredients that compose it. For example, Pizza 6501 contains ingredients 0, 1, 5 and 6.
+When ordering, the customer declares the ingredients that he does not like or is allergic to, and the restaurant only suggests, among the Pizzas available on the menu, those that do not contain any of these ingredients.
 
-// recebo o:
-//	1o -> ingrediente que nao quer
-//	2o -> numero de pizzas
-//	3o ->
+input:
+An integer representing ingredients that the customer does not like or is allergic to.
+Then, the number of Pizzas (N) in the menu is entered.
+Finally, N integers are introduced referring to the N Pizzas in the menu (description of the ingredients of each Pizza).
+
+output:
+Show on separate lines each Pizza that satisfies the customer's requirements (which does not contain any ingredient that the customer does not like or is allergic to), in the following format:
+Suggestion #<i>:<pizza>
+
+Where <i> is the order of the suggestion sequence and <pizza> is the pizza code.
+*/
+
 public class Ex5 {
 	public static int display_recommendation(String dont_ingredients, String pizza_flavour, int index)
 	{
@@ -12,7 +24,6 @@ public class Ex5 {
 		int	i = 0;
 		int	j;
 
-// loop checando os ingredientes na pizza
 		while (i < dont_ingredients.length() && flag == 0)
 		{
 			j = 0;

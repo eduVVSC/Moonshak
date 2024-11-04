@@ -1,5 +1,14 @@
 import	java.util.Scanner;
 
+/*
+Build a program that reads a positive integer, and determines the percentage of even digits and the greatest odd digit.
+
+The percentage must be displayed using to 2 decimal places.
+If there are no odd digits, the message "no odd digits" should be displayed.
+
+Each output value should be displayed on separate lines.
+*/
+
 public class Ex9 {
 	public static void main(String[] args)
 	{

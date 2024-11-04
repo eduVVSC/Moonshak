@@ -1,6 +1,18 @@
 import java.util.Scanner;
 
-// need to fix there is somthing wrong with the counter pos1;
+/*
+Check if an integer, read from the keyboard, has repeated digits. Checking must be done from right to left.
+If a repetition is detected, immediately display the repeated digit and the respective positions in which they occur (from right to left), in the following format:
+
+<number> : digit (<d>) repeated in positions (<p1>) and (<p2>)
+
+where <number> is the number read from the keyboard, <a> is the repeated digit and <p1> and <p2> the positions where they occur.
+
+For example, the number 890230 has the digit (0) repeated in positions (1) and (4).
+
+The algorithm must be applied to a sequence of integers terminated by a negative number.
+*/
+
 public class Ex6 {
 	public static void main(String[] args)
 	{

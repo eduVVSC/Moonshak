@@ -1,5 +1,10 @@
 import	java.util.Scanner;
 
+/*
+Write a program that calculates the number of possible combinations and
+permutations of a set of elements. You must enter the total quantity of elements (m) and the subset size to group (n).
+*/
+
 public class Ex4 {
 	public static int factorial(int num)
 	{

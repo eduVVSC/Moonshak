@@ -1,5 +1,22 @@
 import	java.util.Scanner;
 
+/*
+Write a program to display, in the form of bar graph, the number of students in a class that scored "Approved" and "Failed" on a set of subjects.
+The program should start by asking the number of students in the class and the number of subjects and, for each subject will ask the name of the subject and the number of students with approval.
+
+Implement a module to print information about a subject.
+
+The output should look like this:
+
+Subject: Portuguese
+- Approved: ******
+- Failed: ****
+Subject: Math
+- Approved: *******
+- Failed: ***
+
+*/
+
 public class Ex2 {
 	public static void print(int approved, int many_students, String  subject)
 	{

@@ -1,5 +1,13 @@
 import java.util.Scanner;
 
+/*
+Build a program to read a set of positive integers and see which ones fall into an ascending sequence.
+Reading ends when a negative number is entered.
+A number belongs to an ascending sequence if it is greater than the previous number and its digits are presented in ascending order from left to right.
+
+Each number should appear on a separate line.
+*/
+
 public class Ex4 {
 	public static int growing(int num)
 	{

@@ -1,5 +1,10 @@
 import java.util.Scanner;
 
+/*
+Build a program that calculates the product of
+odd digits of a positive integer entered by the user.
+ */
+
 public class Ex3 {
 	public static void main(String[] args)
 	{

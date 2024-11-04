@@ -1,8 +1,20 @@
 import java.util.Scanner;
 
-// this one work with string rotation basically, so that why i was so confused
-// so 123 has the option 231 or 123 or 312
-//			12 ->	3 -> 12 --> 312
+/*
+Write a program that reads two integers and determines which numbers in that range are full-time primes.
+A number is full-time prime if it is a prime number, and any shift of one digit from end to beginning is still a prime number.
+
+Example:
+123 : 123 (is prime), 312 (not prime), 231 (is prime) : 123 NOT Full time prime
+113 : 113 (is prime), 311 (is prime), 131 (is prime) : 113 Is full-time prime
+
+The program should read two integers, representing the parsing range, and display each full-time prime number in the range on separate lines.
+At the end, the number of full-time prime numbers found should be displayed, in parentheses. The result should have the following format:
+< full-time prime1 >
+< full-time prime2 >
+...
+(number of full-time primes)
+*/
 
 public class Ex6
 {

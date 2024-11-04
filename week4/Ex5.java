@@ -1,5 +1,11 @@
 import java.util.Scanner;
 
+
+/*
+Build a program that takes an integer in base 8 and converts it to
+the decimal system.The algorithm must be applied to a sequence of
+integers ending with a non-positive number.
+ */
 public class Ex5 {
 	public static void main(String[] args){
 		Scanner	myObj = new Scanner(System.in);

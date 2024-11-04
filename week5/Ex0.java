@@ -1,5 +1,14 @@
 import java.util.Scanner;
 
+/*
+Build a program that reads a sequence of N positive integers, where N is entered by the user.
+If the value of N is negative the program terminates immediately.
+
+The program must display on a separate line, for each of the numbers read, the percentage of digits that are divisors of the number itself (using 2 decimal places).
+The digit zero (0) should not be considered as potential divisor but should be counted as digit.
+At the end, the highest of these percentages should be displayed in brackets (using 2 decimal places).
+*/
+
 public class Ex0 {
 	public static void main(String[] args)
 	{

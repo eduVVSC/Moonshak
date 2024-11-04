@@ -1,5 +1,18 @@
 import java.util.Scanner;
 
+/*
+Write a program to identify integers that have unique digits, that is, do not have repeated digits.
+The program must read integers, positive and/or negative and display those that do not have repeated digits.
+The reading ends with the number zero.
+At the end, the percentage of positive, negative and single digit numbers should be displayed (using two decimal places and the % symbol), in the following format:
+
+<n1>
+<n2>
+negatives: <n3>%
+positives: <n4>%
+with unique digits: <n5>%
+*/
+
 public class Ex4
 {
 	public static int	is_unique(String num)

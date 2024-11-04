@@ -1,5 +1,19 @@
 import java.util.Scanner;
 
+/*
+Write a program that reads a positive integer N (N<=100) and displays all of its distinct decompositions as the sum of three positive integers.
+Triples that have the same values, but in different order, should be ignored. At the end, you should also display the number of distinct triples.
+Larger values should appear on the left.
+Display the information in the following format:
+
+<n1> + <n2> + <n3>
+<n4> + <n5> + <n6>
+...
+triples=<distinct triples>
+
+Implement a method that calculates, displays the triples and returns the number of distinct triples.
+*/
+
 public class Ex1
 {
 	public static final int MAX = 100;

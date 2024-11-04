@@ -1,5 +1,20 @@
 import java.util.Scanner;
 
+/*
+a) Implement a module to determine the number of digits of a given number as a parameter.
+
+b)Write a program to read a sequence of integers with less than N digits and average these numbers.
+The value of N must be the first number read.
+
+The program must first read the maximum number of digits (N) the numbers can have.
+Then read integers smaller than N.
+The program ends when a number with more than N digits is entered or when more than K numbers are read.
+
+The average should be displayed to 2 decimal places.
+
+Use a constant to define the maximum number of elements that can be read (K = 5).
+*/
+
 public class Ex1 {
 
 	public static int many_digits (int num) {

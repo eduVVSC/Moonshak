@@ -1,6 +1,12 @@
 import	java.util.Scanner;
 
-// concertar depois
+/*
+Write a program to read a sentence and to write how many words the sentence has.
+A word is considered to be any set of symbols that are between spaces.
+
+Implement a module that receives the sentence and returns the amount of words in that phrase.
+*/
+
 public abstract class Ex3
 {
 	public static int	count_words(String str)

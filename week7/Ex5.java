@@ -1,5 +1,18 @@
 import java.util.Scanner;
 
+/*
+Write a program to display multiplication tables of numbers between a user-defined closed range.
+
+The program should read two positive integers that define the range boundaries. Any negative number should be ignored. Then, the multiplication tables must be displayed in ascending order.
+
+Implement the program using:
+a) A method (readPositiveValue) to read and return a positive integer greater than zero. Numbers should be read continuously until a valid number is entered. The method returns the validated number;
+
+b) A method (showTablesInRange) to receive the range limits as a parameter and has the responsibility to process the multiplication table of all numbers in that range;
+
+c) A method (showTableOfNumber) to display the multiplication table of a specific number received as a parameter. The result should follow the following format (example for the multiplication table of 7):
+*/
+
 public class Ex5 {
 	public static void	table_num(int num)
 	{

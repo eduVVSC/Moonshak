@@ -1,5 +1,11 @@
 import java.util.Scanner;
 
+/*
+Build a program that reads a positive integer and display all of its dividers that are multiples of 3.
+Each divider should be displayed in separated lines.
+If there are no dividers, the message "without dividers multiples of 3" should be displayed.
+*/
+
 public class Ex8 {
 	public static void main(String[] args)
 	{

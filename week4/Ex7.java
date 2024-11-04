@@ -1,5 +1,10 @@
 import java.util.Scanner;
 
+
+/*
+Build a program that, given a positive integer, writes all of its
+dividers and, at the end, the number of dividers in parentheses.
+*/
 public class Ex7 {
 	public static void main(String[] args)
 	{

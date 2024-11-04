@@ -1,5 +1,12 @@
 import java.util.Scanner;
 
+/*
+Build a program that determines and visualizes the first N perfect numbers.
+A number is perfect if it is natural and equals to the sum of all its divisors (excluding the number itself).
+
+Each number should appear on a separate line.
+*/
+
 public class Ex2 {
 	public static void main(String[] args)
 	{

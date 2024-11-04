@@ -1,5 +1,12 @@
 import java.util.Scanner;
 
+/*
+ Build a program that given a positive integer checks whether or not it is a prime number.
+A number is prime if it is an integer greater than 1 and is only divisible, by itself and by 1.
+
+The result should be the message "prime" or "not prime".
+*/
+
 public class Ex8 {
 	public static void main(String[] args)
 	{

@@ -1,5 +1,12 @@
 import java.util.Scanner;
 
+/*
+Build a program that determines and displays prime numbers up to a certain N value entered by the user.
+A number is prime if it is integer, greater than 1, and only divisible, by itself and by 1.
+
+Each number must appear on a separate line.
+*/
+
 public class Ex1 {
 	public static void main(String[] args)
 	{

@@ -1,5 +1,12 @@
 import java.util.Scanner;
 
+/*
+Build a program to display the first N terms of Fibonacci's succession.
+In this sequence, the first term is zero (0), the second term is one (1), and any of the other terms is equal to the sum of its previous two terms.
+
+Each number should appear on a separate line.
+*/
+
 public class Ex3 {
 	public static void main(String[] args)
 	{
