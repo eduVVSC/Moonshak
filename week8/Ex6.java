@@ -13,13 +13,15 @@ public class Ex6 {
 	public static void main(String[] args)
 	{
 		Scanner	input = new Scanner(System.in);
-		int			money_return;
-		int			invested;
+		double		invested;
 		double[]	rate;
 
 		rate = new double[6];
 		for (int i = 0; i < 6; i++)
-			rate[i] = input.nextDouble();
-		invested = input.nextInt();
+			rate[i] = 1 + input.nextDouble();
+		invested = input.nextDouble();
+		for (int i = 0; i < 6; i++)
+			invested = invested * rate[i];
+		System.out.printf("final value=%.2f\n", invested);
 	}
 }
