@@ -32,7 +32,7 @@ public class Ex9 {
 	public static void	print_found(String name, int floor, int entrence)
 	{
 		System.out.printf("name=%s\n", name);
-		System.out.printf("entrence=%d\n", entrence);
+		System.out.printf("entrance=%d\n", entrence);
 		System.out.printf("floor=%d\n", floor);
 	}
 
@@ -46,13 +46,13 @@ public class Ex9 {
 			{
 				if(names[j][i].equals(name_search))
 				{
-					print_found(name_search, i, j);
+					print_found(name_search, j, i);
 					found = true;
 				}
 			}
 		}
 		if (found == false)
-			System.out.println("Do not live in the building");
+			System.out.printf("Do not live in the building\n");
 	}
 
 	public static void	main(String[] args)
@@ -69,6 +69,3 @@ public class Ex9 {
 		searching(names, name_search);
 	}
 }
-
-
-// 0 0 -> 1 0 ->  2 0 -> 3 0

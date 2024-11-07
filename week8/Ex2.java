@@ -19,7 +19,6 @@ public class Ex2{
 		for (int i = 0; i < many_nums; i++)
 			if(nums[i] < min)
 				min = nums[i];
-		System.out.println(min);
 		for (int j = 0; j < many_nums; j++)
 			if (min == nums[j])
 				occurrences++;
