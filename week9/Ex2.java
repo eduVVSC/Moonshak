@@ -17,12 +17,22 @@ public class Ex2
 
 	public static void print_no_repeat(int[] nums, int many_nums)
 	{
-		for (int i = 0; i < many_nums; i++)
+		boolean	print_flag;
+
+		//System.out.println("--------------------");
+		System.out.println(nums[0]);
+		for (int i = 1; i < many_nums; i++)
 		{
-			for (int j = i; j > 0; j--)
+			print_flag = true;
+
+			for (int j = i - 1; j >= 0; j--)
 			{
 				if (nums[i] == nums[j])
+					print_flag = false;
 			}
+
+			if (print_flag == true)
+				System.out.println(nums[i]);
 		}
 
 	}
@@ -36,7 +46,7 @@ public class Ex2
 		many_nums = input.nextInt();
 		nums = new int[many_nums];
 		read_nums(nums, many_nums, input);
-
+		print_no_repeat(nums, many_nums);
 	}
 
 }
