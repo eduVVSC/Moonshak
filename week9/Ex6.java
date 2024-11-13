@@ -32,71 +32,69 @@ public class Ex6
 		}
 	}
 
-	public static void deal_odd(int[][] nums, int dimension)
-	{		int	q1 = 0;
-		int	q2 = 0;
-		int	q3 = 0;
-		int	q4 = 0;
-
-
-		for (int i = 0; i < dimension / 2; i++)
-		{
-			for (int j = 0; j < dimension / 2; j++)
-				q2 += nums[i][j];
-		}
-		for (int i = 0; i < dimension / 2; i++)
-		{
-			for (int j = ((dimension / 2 )+ 1); j < dimension; j++)
-				q1 += nums[i][j];
-		}
-
-		for (int i = ((dimension / 2 )+ 1); i < dimension; i++)
-		{
-			for (int j = 0; j < dimension / 2; j++)
-				q3 += nums[i][j];
-		}
-
-		for (int i = ((dimension / 2 )+ 1); i < dimension; i++)
-		{
-			for (int j = ((dimension / 2 )+ 1); j < dimension; j++)
-				q4 += nums[i][j];
-		}
-		System.out.printf("[%d][%d]\n[%d][%d]\n", q2, q1, q3, q4);
-
-	}
-
-	public static void deal_even(int[][] nums, int dimension)
+	public static int calc_q1(int[][] nums, int dimension, int tolerance)
 	{
 		int	q1 = 0;
-		int	q2 = 0;
-		int	q3 = 0;
-		int	q4 = 0;
 
+		for (int i = 0; i < dimension / 2; i++)
+		{
+			for (int j = ((dimension / 2 ) + tolerance); j < dimension; j++)
+				q1 += nums[i][j];
+		}
+		return (q1);
+	}
+
+	public static int calc_q2(int[][] nums, int dimension, int tolerance)
+	{
+		int	q2 = 0;
 
 		for (int i = 0; i < dimension / 2; i++)
 		{
 			for (int j = 0; j < dimension / 2; j++)
 				q2 += nums[i][j];
 		}
-		for (int i = 0; i < dimension / 2; i++)
-		{
-			for (int j = dimension / 2; j < dimension; j++)
-				q1 += nums[i][j];
-		}
+		return (q2);
+	}
 
-		for (int i = dimension / 2; i < dimension; i++)
+	public static int calc_q3(int[][] nums, int dimension, int tolerance)
+	{
+		int	q3 = 0;
+
+		for (int i = ((dimension / 2 ) + tolerance); i < dimension; i++)
 		{
 			for (int j = 0; j < dimension / 2; j++)
 				q3 += nums[i][j];
 		}
+		return (q3);
+	}
 
-		for (int i = dimension / 2; i < dimension; i++)
+	public static int calc_q4(int[][] nums, int dimension, int tolerance)
+	{
+		int	q4 = 0;
+
+		for (int i = ((dimension / 2 ) + tolerance); i < dimension; i++)
 		{
-			for (int j = dimension / 2; j < dimension; j++)
+			for (int j = ((dimension / 2 ) + tolerance); j < dimension; j++)
 				q4 += nums[i][j];
 		}
+		return (q4);
+	}
+
+
+	public static void quadrants(int[][] nums, int dimension, int tolerance)
+	{
+		int	q1;
+		int	q2;
+		int	q3;
+		int	q4;
+
+		q1 = calc_q1(nums, dimension, tolerance);
+		q2 = calc_q2(nums, dimension, tolerance);
+		q3 = calc_q3(nums, dimension, tolerance);
+		q4	 = calc_q4	(nums, dimension, tolerance);
 		System.out.printf("[%d][%d]\n[%d][%d]\n", q2, q1, q3, q4);
 	}
+
 
 	public static void main(String[] args)
 	{
@@ -110,8 +108,8 @@ public class Ex6
 		nums = new int[dimension][dimension];
 		read_value(nums, dimension, input);
 		if(dimension % 2 == 0)
-			deal_even(nums, dimension);
+			quadrants(nums, dimension, 0);
 		else
-			deal_odd(nums, dimension);
+			quadrants(nums, dimension, 1);
 	}
 }
