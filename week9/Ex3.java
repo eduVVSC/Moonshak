@@ -21,7 +21,11 @@ public class Ex3
 		int	i;
 
 		for (i = 0; i < MAX_READ; i++)
+		{
 			nums[i] = input.nextInt();
+			if (nums[i] < 0)
+				break;
+		}
 		return (i);
 	}
 
